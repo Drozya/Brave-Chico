@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="loader" id="loader">
+    <div class="load"><img src="img/load.svg" alt=""></div>
+    <div class="load-1"><img src="img/load1.svg" alt=""></div>
+    <div class="load-2"><img src="img/load2.svg" alt=""></div>
+    <div class="load-3"><img src="img/load3.svg" alt=""></div>
+</div>
+    <header>
+        <div class="wrapper">
+            <button type="button" class="help js-open-modal" data-modal="1">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M38.2656 31C38.2656 31.66 38.0456 32.32 37.6056 32.98C37.1856 33.62 36.5556 34.16 35.7156 34.6C34.8956 35.02 33.8856 35.23 32.6856 35.23H31.8156L32.4156 40.54H34.9656L35.1456 37.36C36.2656 37.26 37.3056 36.93 38.2656 36.37C39.2256 35.79 40.0056 35.04 40.6056 34.12C41.2256 33.2 41.5356 32.16 41.5356 31C41.5356 30.04 41.3556 29.17 40.9956 28.39C40.6356 27.61 40.1256 26.94 39.4656 26.38C38.8256 25.8 38.0856 25.36 37.2456 25.06C36.4056 24.74 35.5056 24.58 34.5456 24.58C33.3656 24.58 32.3356 24.73 31.4556 25.03C30.5956 25.33 29.8356 25.76 29.1756 26.32C28.5356 26.86 27.9356 27.5 27.3756 28.24L29.7756 30.01C30.2756 29.21 30.9056 28.59 31.6656 28.15C32.4256 27.69 33.2856 27.46 34.2456 27.46C35.0856 27.46 35.7956 27.6 36.3756 27.88C36.9756 28.16 37.4356 28.56 37.7556 29.08C38.0956 29.6 38.2656 30.24 38.2656 31ZM31.6356 44.59C31.6356 45.11 31.8356 45.57 32.2356 45.97C32.6556 46.37 33.1556 46.57 33.7356 46.57C34.3556 46.57 34.8656 46.37 35.2656 45.97C35.6656 45.57 35.8656 45.11 35.8656 44.59C35.8656 44.03 35.6656 43.56 35.2656 43.18C34.8656 42.78 34.3556 42.58 33.7356 42.58C33.1556 42.58 32.6556 42.78 32.2356 43.18C31.8356 43.56 31.6356 44.03 31.6356 44.59Z" fill="#9CA69D"/>
+                    <circle cx="35" cy="35" r="33.5" stroke="#9CA69D" stroke-width="3"/>
+                </svg>
+            </button>
+            <h1>Brave Chico</h1>
+        </div>
+    </header>
+    <section class="home">
+        <div class="wrapper">
+            <div class="box">
+                <div class="img">
+                    <img src="img/cipa.svg" alt="">
+                </div>
+                <div class="right">
+                    <div class="text">
+                        <h2>Пик!</h2>
+                        <p>Ты пришел помочь с Крокотом?!<br> Этот прожорливый крокодил охотится на нас!<br> Легенда гласит, что лишь избранный, обладающий невиданной силой, сможет одолеть его. Твоя задача попасть в него,<br> когда он покажется из своего мрака...</p>
+                    </div>
+                    <div class="bot">
+                        <a href="page.html" class="btn">Я помогу!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="popup modal" data-modal="1">
+        <div class="object">
+            <button type="button" class="clouse modal__cross js-modal-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L19 19M19 1L1 19" stroke="#FFEDCA" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="box">
+                <div class="img">
+                    <img src="img/boec.svg" alt="">
+                </div>
+                <div class="text">
+                    <p>Ты должен нажимать на крокодила каждый раз,<br> когда он покажется из под воды. Каждым<br> верным нажатием ты зарабатываешь 10 очков<br> и прогоняешь крокодила. Будь внимателен,<br> за каждое попадание по другим обитателям<br> болота ты будешь оштрафован на 10 очков.</p>
+                    <p>Да прибудет с тобой внимательность, новичок!</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="name">Дрозденко Софья</div>
+                <div class="date">2023 год</div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay js-overlay-modal"></div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
